@@ -1,7 +1,11 @@
+#1/usr/bin/python3
 """ Pascal Triangle Solution using Python """
 
 def pascal_triangle(n):
     """ Pascal Triangle Solution using Python """
+    if n <= 0:
+        return []
+    
     triangle =[]
 
     for i in range(n):
