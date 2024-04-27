@@ -4,7 +4,6 @@
 def pascal_triangle(n):
     """ Pascal Triangle Solution using Python """
     triangle =[]
-
     if n > 0:
         for i in range(n):
             row = [1] * (i + 1)
