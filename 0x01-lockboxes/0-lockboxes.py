@@ -1,7 +1,9 @@
+#!/usr/bin/python3
 """ Lock Boxes """
 
 
 def canUnlockAll(boxes):
+    """ Lock Boxes """
     for ind in range(1, len(boxes) - 1):
         flat_list = [
             y
