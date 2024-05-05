@@ -1,18 +1,13 @@
-#!/usr/bin/python3
 """ Lock Boxes """
 
 
 def canUnlockAll(boxes):
     """ Lock Boxes """
     for ind in range(1, len(boxes)):
-        flat_list = [
-            y
-            for index in range(len(boxes))
-            for y in boxes[index]
-            if index != ind
-        ]
-
-        if ind not in flat_list:
+        check = False
+        for box in range(len(boxes)):
+            if ind in boxes[box] and ind != box:
+                check = True
+        if not check:
             return False
-
     return True
