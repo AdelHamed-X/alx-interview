@@ -4,7 +4,7 @@
 
 def canUnlockAll(boxes):
     """ Lock Boxes """
-    for ind in range(1, len(boxes) - 1):
+    for ind in range(1, len(boxes)):
         flat_list = [
             y
             for index in range(len(boxes))
